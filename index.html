@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-1.12.4.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <title>Celebrity Chef Match Site</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row" id="header">
+        <h1>Who do you match with?</h1>
+        <h2>Celebrity Match Network</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <div class="row" id="inputForm">
+        <form id="matchForm">
+          <p>Choose your favorite food:</p>
+          <select class="form-control" id="food">
+            <option>Pizza</option>
+            <option>Lasagna</option>
+            <option>Salad</option>
+            <option>Steak</option>
+          </select>
+          <p>Choose one:</p>
+          <select class="form-control" id="gender">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+          <!-- age -->
+          <div class="form-group" id="age">
+            <label for="age">Enter your age:</label>
+             <input type="text" class="form-control" placeholder="Age">
+          </div>
+
+          <!-- <div class="form-group has-error" id="inputError1">
+            <label class="control-label" for="inputError1">Please put your age!</label>
+            <input type="text" class="form-control">
+          </div> -->
+          <!-- age -->
+          <button type="submit" class="btn btn-default" id="matchSubmit">Let's see who you match!</button>
+        </form>
+      </div>
+
+      <div class="row">
+        <div id="paulaDeenText">
+          <img src="img/pauldeen.gif">
+          <h2>You matched with Paula Deen!</h2>
+        </div>
+
+        <div id="rachaelRayText">
+          <img src="img/rachael.jpg">
+          <h2>You matched with Rachael Ray!</h2>
+        </div>
+
+        <div id="marioBataliText">
+          <img src="img/mario.jpg">
+          <h2>You matched with Mario Batali!</h2>
+        </div>
+
+        <div id="guyFerrariText">
+          <img src="img/guy.gif">
+          <h2>You matched with Guy Ferrari!</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+#paulaDeenText, #rachaelRayText, #marioBataliText, #guyFerrariText {
+  display: none;
+}
+
+#header {
+  border: 4px solid pink;
+  margin-bottom: 60px;
+  padding: 30px;
+  background-image: url(../img/heart.jpg);
+  color: black;
+  font-family: monospace;;
+  font-weight: bold;
+
+}
+
+#inputForm {
+  margin-bottom: 60px;
+}
+
+#inputError1 {
+  display: none;
+}
