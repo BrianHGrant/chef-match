@@ -9,25 +9,25 @@ $(document).ready(function() {
     $("#rachaelRayText").hide();
     $("#paulaDeenText").hide();
 
-    if (age >= 50 && gender === 'Male' && food === 'Steak') {
-      $("#paulaDeenText").show();
+    if (age) {
+      $("#ageOption").removeClass("has-error").addClass("has-success");
+      $(".help-inline").hide();
+      if (age >= 50 && gender === 'Male' && food === 'Steak') {
+        $("#paulaDeenText").show();
+      }
+      else if (age <= 50 && gender === 'Male' && food === 'Salad') {
+        $("#rachaelRayText").show();
+      }
+      else if (age >= 50 && gender === 'Female' && food === 'Lasagna') {
+        $("#marioBataliText").show();
+      }
+      else {
+        $("#guyFerrariText").show();
+      }
     }
-    else if (age <= 50 && gender === 'Male' && food === 'Salad') {
-      $("#rachaelRayText").show();
+    else if (isNaN(age)) {
+      $(".help-inline").show();
     }
-    else if (age >= 50 && gender === 'Female' && food === 'Lasagna') {
-      $("#marioBataliText").show();
-    }
-    // else if (!age) {
-    //   $("#inputError1").show();
-    //   $("#age").hide();
-    //
-    // }
-    else {
-      $("#guyFerrariText").show();
-
-    }
-
     event.preventDefault();
   });
 
